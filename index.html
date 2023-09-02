@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav>
+      <div class="container nav_container">
+        <a href="./index.html"><h4>CampDev</h4></a>
+        <ul class="nav_menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+        <button id="open-menu-btn"><i data-feather="menu"></i></button>
+        <button id="close-menu-btn"><i data-feather="x"></i></button>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Header START -->
+    <header>
+      <div class="container header_container">
+        <div class="header_left">
+          <h1>Grow your skills to andvance your career path</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti iure fugit ullam repellendus qui odit, labore laborum optio dolores rerum.</p>
+          <a href="courses.html" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="header_right">
+          <div class="header_right-image">
+            <img src="./assets/img/header.svg" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header END-->
+
+    <!-- Categories start -->
+    <section class="categories">
+      <div class="container categories_container">
+        <div class="categories_left">
+          <h1>Categories</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur impedit quam eum, culpa fugiat quaerat nisi dolor provident temporibus magni. Laboriosam harum fuga architecto accusamus corrupti obcaecati corporis, praesentium
+            ut!
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="categories_right">
+          <article class="category">
+            <span class="category_icon"><i data-feather="dollar-sign"></i></span>
+            <h5>Blockchain</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+          </article>
+
+          <article class="category">
+            <span class="category_icon"><i data-feather="dollar-sign"></i></span>
+            <h5>Graphic Design</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+          </article>
+
+          <article class="category">
+            <span class="category_icon"><i data-feather="dollar-sign"></i></span>
+            <h5>Finance</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+          </article>
+
+          <article class="category">
+            <span class="category_icon"><i data-feather="dollar-sign"></i></span>
+            <h5>Marketing</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+          </article>
+
+          <article class="category">
+            <span class="category_icon"><i data-feather="dollar-sign"></i></span>
+            <h5>Music</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+          </article>
+
+          <article class="category">
+            <span class="category_icon"><i data-feather="dollar-sign"></i></span>
+            <h5>Business</h5>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Categories end -->
+
+    <!-- courses start -->
+    <section class="courses">
+      <h2>Our Popular Courses</h2>
+      <div class="container courses_container">
+        <article class="course">
+          <div class="course_image">
+            <img src="./assets/img/course1.jpg" />
+          </div>
+          <div class="course_info">
+            <h4>Responsive Social Media Website UI Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course_image">
+            <img src="./assets/img/course2.jpg" />
+          </div>
+          <div class="course_info">
+            <h4>Responsive Social Media Website UI Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course_image">
+            <img src="./assets/img/course3.jpg" />
+          </div>
+          <div class="course_info">
+            <h4>Responsive Social Media Website UI Design</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
+            <a href="courses.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- courses end -->
+
+    <script src="./js/main.js"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
