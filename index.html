@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
   </head>
   <body>
     <!-- Navbar start -->
@@ -222,9 +224,104 @@
       </div>
     </section>
     <!-- FAQ end -->
-    <script src="./js/main.js"></script>
+
+    <!-- Testimonial Start -->
+    <section class="container testimonials_container mySwiper">
+      <h2>Students's Testimonials</h2>
+      <div class="swiper-wrapper">
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./assets/img/avatar1.jpg" alt="" srcset="">
+          </div>
+          <div class="testimonial_info">
+            <h5>Diana Ayi</h5>
+            <small>Student</small>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ipsam consequuntur corrupti doloremque impedit minima nesciunt, architecto cum aspernatur animi eos totam veritatis iusto voluptatibus voluptatem voluptas dolor dicta autem!
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./assets/img/avatar2.jpg" alt="" srcset="">
+          </div>
+          <div class="testimonial_info">
+            <h5>Diana Ayi</h5>
+            <small>Student</small>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ipsam consequuntur corrupti doloremque impedit minima nesciunt, architecto cum aspernatur animi eos totam veritatis iusto voluptatibus voluptatem voluptas dolor dicta autem!
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./assets/img/avatar3.jpg" alt="" srcset="">
+          </div>
+          <div class="testimonial_info">
+            <h5>Diana Ayi</h5>
+            <small>Student</small>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ipsam consequuntur corrupti doloremque impedit minima nesciunt, architecto cum aspernatur animi eos totam veritatis iusto voluptatibus voluptatem voluptas dolor dicta autem!
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide">
+          <div class="avatar">
+            <img src="./assets/img/avatar4.jpg" alt="" srcset="">
+          </div>
+          <div class="testimonial_info">
+            <h5>Diana Ayi</h5>
+            <small>Student</small>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ipsam consequuntur corrupti doloremque impedit minima nesciunt, architecto cum aspernatur animi eos totam veritatis iusto voluptatibus voluptatem voluptas dolor dicta autem!
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial swiper-slide" >
+          <div class="avatar">
+            <img src="./assets/img/avatar5.jpg" alt="" srcset="">
+          </div>
+          <div class="testimonial_info">
+            <h5>Diana Ayi</h5>
+            <small>Student</small>
+            <div class="testimonial_body">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed ipsam consequuntur corrupti doloremque impedit minima nesciunt, architecto cum aspernatur animi eos totam veritatis iusto voluptatibus voluptatem voluptas dolor dicta autem!
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+    <!-- <script src="./js/main.js"></script>
     <script>
       feather.replace();
-    </script>
+    </script> -->
   </body>
 </html>
