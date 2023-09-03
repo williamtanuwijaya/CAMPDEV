@@ -5,21 +5,21 @@ window.addEventListener('scroll', () => {
 });
 
 // show/hide faq answer
-const faqs = document.querySelectorAll('.faq');
+// const faqs = document.querySelectorAll('.faq');
 
-faqs.forEach((faq) => {
-  faq.addEventListener('click', () => {
-    faq.classList.toggle('open');
+// faqs.forEach((faq) => {
+//   faq.addEventListener('click', () => {
+//     faq.classList.toggle('open');
 
-    // change icon
-    const icon = faq.querySelector('.faq_icon i');
+//     // change icon
+//     const icon = faq.querySelector('.faq_icon i');
 
-    if (icon.getAttribute('data-feather') === 'plus') {
-      icon.setAttribute('data-feather', 'minus');
-    } else {
-      icon.setAttribute('data-feather', 'plus');
-    }
+//     if (icon.getAttribute('data-feather') === 'plus') {
+//       icon.setAttribute('data-feather', 'minus');
+//     } else {
+//       icon.setAttribute('data-feather', 'plus');
+//     }
 
-    feather.replace();
-  });
-});
+//     feather.replace();
+//   });
+// });
