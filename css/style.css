@@ -490,7 +490,7 @@ footer ul li a:hover {
   .categories_right {
     margin-top: 2rem;
     display: flex;
-    flex-wrap:wrap-reverse
+    flex-wrap:wrap-reverse;
   }
   .category {
     padding: 1rem;
