@@ -484,19 +484,23 @@ footer ul li a:hover {
   }
 
   /* categories for mobile */
+  .categories{
+    height: auto;
+  }
   .categories_right {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap:wrap-reverse
   }
   .category {
     padding: 1rem;
     border-radius: 1rem;
   }
 
-  .category_icon {
+  /* .category_icon {
     margin-top: 4px;
     display: inline-block;  
-  }
+  } */
   /* Popular course for mobile */
   .courses_container {
     grid-template-columns: 1fr;
