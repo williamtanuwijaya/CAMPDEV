@@ -485,12 +485,14 @@ footer ul li a:hover {
 
   /* categories for mobile */
   .categories{
+    display: flex;
+    font-size: 0.8rem;
     height: auto;
   }
   .categories_right {
-    margin-top: 2rem;
     display: flex;
     flex-wrap:wrap-reverse;
+    margin-top: 2rem;
   }
   .category {
     padding: 1rem;
