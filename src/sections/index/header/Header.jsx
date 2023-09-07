@@ -1,5 +1,5 @@
 import './header.css'
-import imageHeader from './../../assets/images/header.png'
+import imageHeader from './../../../assets/images/header.png'
 
 
 const Header = () => {
