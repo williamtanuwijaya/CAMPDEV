@@ -202,6 +202,7 @@ header {
   padding: 2rem;
   border-radius: 2rem;
   transition: var(--transition);
+  margin-bottom: 2rem;
 }
 
 .category:hover {
@@ -413,6 +414,19 @@ footer ul li a:hover {
   border-top: 1px solid var(--color-bg2);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {     
+  background: transparent;    
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-bg2);
+  border-radius:10px;
+}
+
 
 /* Responsive media queries */
 @media screen and (max-width: 1024px){
@@ -485,18 +499,35 @@ footer ul li a:hover {
 
   /* categories for mobile */
   .categories{
+    position: relative;
     display: flex;
     font-size: 0.8rem;
-    height: auto;
+    height: 800px;
+  }
+
+  .categories_left{
+    margin-right: 0;
   }
   .categories_right {
     display: flex;
-    flex-wrap:wrap-reverse;
-    margin-top: 2rem;
+    position: relative;
+    margin-top: 25rem;
+    margin-right: -15rem;
+    right: 69%;
   }
   .category {
-    padding: 1rem;
-    border-radius: 1rem;
+    margin-bottom: 25px;
+    width: 10rem;
+  }
+  
+  .row{
+    position: relative;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 20px;
   }
 
   /* .category_icon {
