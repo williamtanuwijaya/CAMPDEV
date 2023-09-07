@@ -1,4 +1,5 @@
 import './navbar.css'
+import './../../../index.css'
 import data from './data'
 
 const Navbar = () => {
