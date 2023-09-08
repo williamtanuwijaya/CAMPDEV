@@ -1,42 +1,63 @@
+
+
+/* NAVBAR */
 nav {
-    background: transparent;
-    width: 100vw;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    z-index: 11;
-    transition: var(--transition);
-  }
-  
-  /* change navbar styles on scroll using javascript */
-  .window-scroll {
-    background: var(--color-primary);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  }
-  
-  .nav_container {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  nav button {
-    display: none;
-  }
-  
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  transition: var(--transition);
+}
+
+/* change navbar styles on scroll using javascript */
+.window-scroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.nav_container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav_menu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.nav_menu a:hover {
+  color: var(--color-bg2);
+}
+
+@media screen and (max-width: 600px){
   .nav_menu {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    background: var(--color-bg);
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .nav_menu.active {
     display: flex;
-    align-items: center;
-    gap: 4rem;
   }
-  
-  .nav_menu a {
-    font-size: 0.9rem;
-    transition: var(--transition);
-  }
-  
-  .nav_menu a:hover {
-    color: var(--color-bg2);
-  }
-  
+}

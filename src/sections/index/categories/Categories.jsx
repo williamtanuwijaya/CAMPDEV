@@ -14,15 +14,45 @@ const Categories = () => {
           <a href="#" className="btn">Learn More</a>
         </div>
         <div className="categories_right">
-          {
-            data.map(item =>
-              <article key={item.id} className="category">
-                <span className="category_icon"><i data-feather="dollar-sign"></i></span>
-                <h5>{item.title}</h5>
-                <p>{item.explain}</p>
-              </article>
-            )
-          }
+          <div className="row">
+            <article className="category">
+              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
+              <h5>Blockchain</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+            </article>
+
+            <article className="category">
+              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
+              <h5>Graphic Design</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+            </article>
+          </div>
+          <div className="row">
+            <article className="category">
+              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
+              <h5>Blockchain</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+            </article>
+
+            <article className="category">
+              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
+              <h5>Graphic Design</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+            </article>
+          </div>
+          <div className="row">
+            <article className="category">
+              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
+              <h5>Blockchain</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+            </article>
+
+            <article className="category">
+              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
+              <h5>Graphic Design</h5>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
