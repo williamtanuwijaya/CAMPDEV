@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
             <nav>
                 <div className="container nav_container">
-                    <a href="./index.html"><h4>CampDev</h4></a>
+                    <a href="/"><h4>CampDev</h4></a>
                     <ul className='nav_menu'>
                         {
                             data.map(item => <li key={item.id}><a href={item.link}>{item.title}</a></li>)
