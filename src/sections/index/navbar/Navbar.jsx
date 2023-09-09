@@ -13,7 +13,7 @@ const Navbar = () => {
                         }
                     </ul>
                     <button id="open-menu-btn"><i data-feather="menu"></i></button>
-                    <button id="close-menu-btn"><i data-feather="x"></i></button>
+                    {/* <button id="close-menu-btn"><i data-feather="x"></i></button> */}
                 </div>
             </nav>
     )
