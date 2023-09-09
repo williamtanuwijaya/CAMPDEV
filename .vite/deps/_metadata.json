@@ -1,35 +1,35 @@
 {
-  "hash": "a8a26a60",
-  "browserHash": "c2db191e",
+  "hash": "1e47eb44",
+  "browserHash": "a62d3a48",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "202716dc",
+      "fileHash": "99b9de17",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "924e7b98",
+      "fileHash": "e17b2073",
       "needsInterop": true
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.js",
       "file": "react-router-dom.js",
-      "fileHash": "296f432c",
-      "needsInterop": false
-    },
-    "react-icons/fa": {
-      "src": "../../node_modules/react-icons/fa/index.esm.js",
-      "file": "react-icons_fa.js",
-      "fileHash": "c83599e8",
+      "fileHash": "fe4460fd",
       "needsInterop": false
     },
     "react-faq-component": {
       "src": "../../node_modules/react-faq-component/build/index.es.js",
       "file": "react-faq-component.js",
-      "fileHash": "7048f55d",
+      "fileHash": "1b4b487c",
+      "needsInterop": false
+    },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.esm.js",
+      "file": "react-icons_fa.js",
+      "fileHash": "e1c94113",
       "needsInterop": false
     }
   },

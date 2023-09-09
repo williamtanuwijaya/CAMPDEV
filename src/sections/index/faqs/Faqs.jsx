@@ -18,7 +18,9 @@ const Faqs = () => {
 
       <Faq
         data={data}
-      // styles={}
+        // styles={
+
+        // }
       />
 
     </section >
