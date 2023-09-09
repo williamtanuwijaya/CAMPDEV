@@ -12,105 +12,105 @@ import course9 from './../../assets/images/course9.jpg'
 
 const Courses = () => {
     return (
-        <section class="courses">
+        <section className="courses">
             <h2>Our Popular Courses</h2>
-            <div class="container courses_container">
-                <article class="course">
-                    <div class="course_image">
+            <div className="container courses_container">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course1} />
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course2}/>
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course3} />
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course4} />
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course5} />
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course6}/>
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course7}/>
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course8}/>
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
 
-                <article class="course">
-                    <div class="course_image">
+                <article className="course">
+                    <div className="course_image">
                         <img src={course9}/>
                     </div>
-                    <div class="course_info">
+                    <div className="course_info">
                         <h4>Responsive Social Media Website UI Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, magnam? Quasi dolorum mollitia esse nemo odio!</p>
-                        <a href="courses.html" class="btn btn-primary">Learn More</a>
+                        <a href="courses.html" className="btn btn-primary">Learn More</a>
                     </div>
                 </article>
             </div>

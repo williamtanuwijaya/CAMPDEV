@@ -16,9 +16,9 @@ const openMenuButton = document.getElementById("open-menu-btn");
 const navMenu = document.querySelector(".nav_menu");
 
 // Ketika tombol buka menu diklik
-openMenuButton.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
+// openMenuButton.addEventListener("click", () => {
+//   navMenu.classList.toggle("active");
+// });
 
 // Menutup menu jika pengguna mengklik di luar menu
 document.addEventListener("click", (event) => {

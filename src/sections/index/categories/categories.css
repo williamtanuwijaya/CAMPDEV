@@ -77,36 +77,43 @@
 
 @media screen and (max-width: 600px) {
     .row {
-        position: relative;
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         text-align: center;
-        margin-bottom: 20px;
     }
 
     .categories {
         position: relative;
-        display: flex;
         font-size: 0.8rem;
         height: 800px;
     }
 
-    .categories_left {
-        margin-right: 0;
+    .categories_container {
+        flex-direction: column;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories_left p {
+        display: none;
+    }
+
+    .categories_left .btn {
+        display: none;
     }
 
     .categories_right {
-        display: flex;
-        position: relative;
-        margin-top: 25rem;
-        margin-right: -15rem;
-        right: 69%;
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
     }
 
     .category {
-        margin-bottom: 25px;
         width: 10rem;
+        height: 10rem;
+    }
+
+    .category p {
+        display: none;
     }
 }
