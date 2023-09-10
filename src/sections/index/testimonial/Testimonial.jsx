@@ -9,15 +9,16 @@ import avatar5 from "./../../../assets/images/avatar5.jpg"
 
 const Testimonial = () => {
     return (
-        <section className="container testimonials_container mySwiper">
+        <section className="container testimonials_container">
             <h2>Students's Testimonials</h2>
             <Swiper
+            slideClass='testimonial'
                 slidesPerView={1}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
-                    <article className="testimonial swiper-slide">
+                    <article className="testimonial">
                         <div className="avatar">
                             <img src={avatar1} alt="" srcSet="" />
                         </div>
@@ -34,7 +35,7 @@ const Testimonial = () => {
                     </article>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial swiper-slide">
+                    <article className="testimonial">
                         <div className="avatar">
                             <img src={avatar2} alt="" srcSet="" />
                         </div>
@@ -52,7 +53,7 @@ const Testimonial = () => {
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial swiper-slide">
+                    <article className="testimonial">
                         <div className="avatar">
                             <img src={avatar3} alt="" srcSet="" />
                         </div>
@@ -69,7 +70,7 @@ const Testimonial = () => {
                     </article>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial swiper-slide">
+                    <article className="testimonial">
                         <div className="avatar">
                             <img src={avatar5} alt="" srcSet="" />
                         </div>
@@ -86,7 +87,7 @@ const Testimonial = () => {
                     </article>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial swiper-slide">
+                    <article className="testimonial">
                         <div className="avatar">
                             <img src={avatar4} alt="" srcSet="" />
                         </div>
