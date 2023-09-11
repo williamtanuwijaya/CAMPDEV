@@ -1,24 +1,23 @@
-import React from 'react'
-import './testimonial.css'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import avatar1 from "./../../../assets/images/avatar1.jpg"
-import avatar2 from "./../../../assets/images/avatar2.jpg"
-import avatar3 from "./../../../assets/images/avatar3.jpg"
-import avatar4 from "./../../../assets/images/avatar4.jpg"
-import avatar5 from "./../../../assets/images/avatar5.jpg"
+import React, { useState } from 'react';
+import './testimonial.css';
+import avatar1 from './../../../assets/images/avatar1.jpg';
+import avatar2 from './../../../assets/images/avatar2.jpg';
+import avatar3 from './../../../assets/images/avatar3.jpg';
+import avatar4 from './../../../assets/images/avatar4.jpg';
+import avatar5 from './../../../assets/images/avatar5.jpg';
+import Carousel from 'react-bootstrap/Carousel';
 
 const Testimonial = () => {
     return (
-        <section className="container testimonials_container">
+        <section className="container testimonials_container mySwiper">
             <h2>Students's Testimonials</h2>
             <Swiper
-            slideClass='testimonial'
                 slidesPerView={1}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
-                    <article className="testimonial">
+                    <article className="testimonial swiper-slide">
                         <div className="avatar">
                             <img src={avatar1} alt="" srcSet="" />
                         </div>
@@ -35,7 +34,7 @@ const Testimonial = () => {
                     </article>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial">
+                    <article className="testimonial swiper-slide">
                         <div className="avatar">
                             <img src={avatar2} alt="" srcSet="" />
                         </div>
@@ -53,7 +52,7 @@ const Testimonial = () => {
 
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial">
+                    <article className="testimonial swiper-slide">
                         <div className="avatar">
                             <img src={avatar3} alt="" srcSet="" />
                         </div>
@@ -70,7 +69,7 @@ const Testimonial = () => {
                     </article>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial">
+                    <article className="testimonial swiper-slide">
                         <div className="avatar">
                             <img src={avatar5} alt="" srcSet="" />
                         </div>
@@ -87,7 +86,7 @@ const Testimonial = () => {
                     </article>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <article className="testimonial">
+                    <article className="testimonial swiper-slide">
                         <div className="avatar">
                             <img src={avatar4} alt="" srcSet="" />
                         </div>
@@ -187,4 +186,4 @@ const Testimonial = () => {
     )
 }
 
-export default Testimonial
+export default Testimonial;
