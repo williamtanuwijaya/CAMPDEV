@@ -20,7 +20,7 @@ export const Index = () => {
             <Categories />
             <Courses />
             <Faqs />
-            <Testimonial />
+            {/* <Testimonial /> */}
             <Footer />
         </>
     )

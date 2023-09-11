@@ -4,13 +4,6 @@ import { useState } from 'react'
 import Faq from 'react-faq-component';
 
 const Faqs = () => {
-  const [showAnswer, setShowAnswer] = useState(false)
-
-  const onClickQuest = (id) => {
-    setShowAnswer(!showAnswer)
-    console.log(showAnswer)
-    console.log(id)
-  }
 
   return (
     <section className="faqs">
