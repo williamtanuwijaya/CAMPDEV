@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import './Login.css';
+// import '../../../../Backend/server'
 
 function LoginRegister() {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -8,11 +9,13 @@ function LoginRegister() {
     setIsSignUp(!isSignUp);
   };
 
+  
+
   return (
-    <div className="container">
+    <div className="container_Login">
       <div className="form-box">
         <h1 className="title">{isSignUp ? 'Sign Up' : 'Sign In'}</h1>
-        <form action="">
+        <form  action="http://localhost:8081/tambah" method='POST' >
           <div className={`input-group ${isSignUp ? '' : 'collapsed'}`}>
             <div className="input-field" id="nameField">
               <i className="fa-solid fa-user"></i>

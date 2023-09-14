@@ -13,6 +13,8 @@ app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
 
+app.use(express.urlencoded({ extended: true }));
+
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
@@ -25,7 +27,7 @@ db.connect((err) => {
   console.log('database connected');
 
   // Untuk mendapatkan data
-  app.get('/tambah', (req, res) => {
+  app.get('/ambil', (req, res) => {
     const sql = 'SELECT * FROM tbuser';
     db.query(sql, (err, result) => {
       const users = JSON.parse(JSON.stringify(result));
@@ -37,7 +39,12 @@ db.connect((err) => {
 
   // // Untuk menyimpan data
   app.post('/tambah', (req, res) => {
-    const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES (2,'r','r','t')`;
+    const nama = String(req.body.nama);
+    const email = String(req.body.email);
+    const pw = String(req.body.password_hash);
+
+    // const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES (6,${nama},${email},'${pw}')`;
+    const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES (10, '${nama}', '${email}', '${pw}')`;
     db.query(insertSQL, (err, result) => {
       if (err) throw err;
       console.log('error');
