@@ -21,7 +21,7 @@ const Achievements = () => {
                             data.map(item =>
                                 <article key={item.id} className="achievement_card">
                                     <span className="achievement_icon">
-                                        <i>Icon tarok disini</i>
+                                        <i><item.icon/></i>
                                     </span>
                                     <h3>{item.num}</h3>
                                     <p>{item.title}</p>

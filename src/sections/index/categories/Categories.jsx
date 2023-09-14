@@ -1,5 +1,15 @@
 import './categories.css'
 import data from './data'
+import {
+  SiCyberdefenders, SiFlutter, SiDatabricks
+} from 'react-icons/si'
+import {
+  DiReact
+} from 'react-icons/di'
+import {
+  CgWebsite
+} from 'react-icons/cg'
+
 
 const Categories = () => {
   return (
@@ -16,40 +26,41 @@ const Categories = () => {
         <div className="categories_right">
           <div className="row">
             <article className="category">
-              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
-              <h5>Blockchain</h5>
+              <h5>Web Development</h5>
+              <DiReact className="category_icon"/>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
             </article>
 
             <article className="category">
-              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
-              <h5>Graphic Design</h5>
+              <h5>Mobile App Development</h5>
+              <SiFlutter className="category_icon"/>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
             </article>
           </div>
           <div className="row">
             <article className="category">
-              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
-              <h5>Blockchain</h5>
+              <h5>Cyber security</h5>
+              <SiCyberdefenders className="category_icon"/>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
             </article>
 
             <article className="category">
-              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
-              <h5>Graphic Design</h5>
+              <h5>Data science</h5>
+              <SiDatabricks className="category_icon"/>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
             </article>
           </div>
           <div className="row">
             <article className="category">
-              {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
-              <h5>Blockchain</h5>
+              <h5>Internet of Things</h5>
+              <SiCyberdefenders className="category_icon"/>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
             </article>
 
             <article className="category">
               {/* <!-- <span className="category_icon"><i data-feather="dollar-sign"></i></span> --> */}
-              <h5>Graphic Design</h5>
+              <h5>UI/UX Design</h5>
+              <CgWebsite className="category_icon"/>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, qui!</p>
             </article>
           </div>

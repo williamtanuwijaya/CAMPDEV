@@ -34,7 +34,8 @@
     padding: 2rem;
     border-radius: 2rem;
     transition: var(--transition);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    height:15rem;
 }
 
 .category:hover {
@@ -59,9 +60,11 @@
 }
 
 .category_icon {
-    background: var(--color-primary);
-    padding: 0.7rem;
+    /* background: var(--color-b); */
     border-radius: 0.9rem;
+    height: 3.1rem;
+    width: 3.1rem;
+    display: none;
 }
 
 .category h5 {
@@ -72,6 +75,19 @@
     font-size: 0.85rem;
 }
 
+@media screen and (max-width: 990px) {
+    .category p {
+        transition: var(--transition);
+        display: none;
+    }
+    .category_icon {
+        display: block;
+    }
+    .category{
+        height: 12rem;
+        padding: 25px 40px ;
+    }
+}
 
 
 
@@ -111,6 +127,7 @@
     .category {
         width: 10rem;
         height: 10rem;
+        padding: 10px 51px;
     }
 
     .category p {

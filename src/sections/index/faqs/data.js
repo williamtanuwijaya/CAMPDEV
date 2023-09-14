@@ -1,5 +1,5 @@
 const data = {
-    title: "FAQ (How it works)",
+    title: "",
     rows: [
         {
             title: "Lorem ipsum dolor sit amet,",

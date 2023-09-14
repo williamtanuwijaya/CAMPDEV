@@ -32,12 +32,12 @@
   }
   
   .achievement_icon {
-    background: var(--color-danger);
+    /* background: var(--color-danger); */
     padding: 0.6rem;
     border-radius: 1rem;
     display: inline-block;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    /* margin-bottom: 2rem; */
+    font-size: 5rem;
   }
   
   .achievements_card:nth-child(2) .achievement_icon {
