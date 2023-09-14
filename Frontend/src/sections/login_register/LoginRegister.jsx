@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Login.css'
+// import '../../../../Backend/server';
 
 function LoginRegister() {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -29,7 +30,7 @@ function LoginRegister() {
     <div className="container_Login">
       <div className="form-box">
         <h1 id="title">Sign Up</h1>
-        <form action="">
+        <form action="/tambah" method='POST'>
           <div className="input-group">
             <div className="input-field" id="nameField">
               <i className="fa-solid fa-user"></i>
