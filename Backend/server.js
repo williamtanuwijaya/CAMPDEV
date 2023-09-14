@@ -7,6 +7,8 @@ import cookieParser from 'cookie-parser';
 
 const port = 8081;
 const app = express();
+app.set('view engine', 'ejs');
+app.set('views', 'views');
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
@@ -23,27 +25,26 @@ db.connect((err) => {
   console.log('database connected');
 
   // Untuk mendapatkan data
-  app.get('/', (req, res) => {
+  app.get('/tambah', (req, res) => {
     const sql = 'SELECT * FROM tbuser';
     db.query(sql, (err, result) => {
       const users = JSON.parse(JSON.stringify(result));
       // res.render('index', { users: users, title: 'DAFTAR MURID' });
       console.table(users);
+      res.render('index');
     });
-
-    
   });
 
   // // Untuk menyimpan data
   app.post('/tambah', (req, res) => {
-    const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES ('4','tes','tes','tes')`;
+    const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES (${req.body.id}), ${req.body.nama}, ${req.body.email},${req.body.password_hash})`;
     db.query(insertSQL, (err, result) => {
       if (err) throw err;
-      console.log("error");
+      console.log('error');
     });
   });
 });
-
+  
 app.listen(port, () => {
   console.log('Running ready..');
 });
