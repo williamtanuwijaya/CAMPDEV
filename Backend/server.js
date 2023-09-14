@@ -37,14 +37,14 @@ db.connect((err) => {
 
   // // Untuk menyimpan data
   app.post('/tambah', (req, res) => {
-    const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES (${req.body.id}), ${req.body.nama}, ${req.body.email},${req.body.password_hash})`;
+    const insertSQL = `INSERT INTO tbuser (id, nama, email, password_hash) VALUES (2,'r','r','t')`;
     db.query(insertSQL, (err, result) => {
       if (err) throw err;
       console.log('error');
     });
   });
 });
-  
+
 app.listen(port, () => {
   console.log('Running ready..');
 });
