@@ -27,11 +27,8 @@
   padding: 2rem;
   border: 1pxd solid transparent;
   transition: var(--transition);
-}
-
-.team_member:hover {
-  background: transparent;
   border-color: var(--color-primary);
+  border-radius: 50px;
 }
 
 .team_member-image img {

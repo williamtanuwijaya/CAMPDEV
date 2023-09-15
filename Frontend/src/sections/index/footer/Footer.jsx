@@ -8,7 +8,7 @@ const Footer = () => {
           <a href="index.html" className="footer_logo">
             <h4>CampDev</h4>
           </a>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatem repellat iure maiores amet explicabo,</p>
+          <p>"Sumber belajar online untuk kemajuan karier"</p>
         </div>
 
         <div className="footer_2">

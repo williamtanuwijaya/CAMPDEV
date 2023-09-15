@@ -1,5 +1,6 @@
-import './header.css'
-import imageHeader from './../../../assets/images/header.png'
+
+import './header.css';
+import imageHeader from './../../../assets/images/header.png';
 
 
 const Header = () => {
@@ -7,9 +8,11 @@ const Header = () => {
     <header>
       <div className="container header_container">
         <div className="header_left">
-          <h1>Grow your skills to andvance your career path</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti iure fugit ullam repellendus qui odit, labore laborum optio dolores rerum.</p>
-          <a href="courses.html" className="btn btn-primary">Get Started</a>
+          <h1>Kembangkan Kemampuan Anda, Bangun Karier yang Sukses</h1>
+          <p>Temukan kursus berkualitas tinggi yang akan membantu Anda mencapai tujuan karier Anda yang lebih tinggi.</p>
+          <a href="/login_and_register" className="btn btn-primary">
+            Sign in
+          </a>
         </div>
         <div className="header_right">
           <div className="header_right-image">
@@ -18,7 +21,7 @@ const Header = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
