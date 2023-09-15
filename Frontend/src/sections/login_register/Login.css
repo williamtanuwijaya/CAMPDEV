@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .container_Login {
+=======
+.container_Login{
+>>>>>>> 64697071acf571671a8512752a52a2ac4ddf613c
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)), url('../../assets/background/459-background.png');

@@ -1,19 +1,37 @@
 import { useState } from 'react';
-import './Login.css';
+import './Login.css'
+// import '../../../../Backend/server';
 
 function LoginRegister() {
   const [isSignUp, setIsSignUp] = useState(true);
 
   const toggleForm = () => {
+    const nameField = document.getElementById('nameField');
+    const title = document.getElementById('title');
+    const signupBtn = document.getElementById('signupBtn');
+    const signinpBtn = document.getElementById('signinpBtn');
+
+    if (isSignUp) {
+      nameField.style.maxHeight = '0';
+      title.innerHTML = 'Sign In';
+      signupBtn.classList.add('disable');
+      signinpBtn.classList.remove('disable');
+    } else {
+      nameField.style.maxHeight = '60px';
+      title.innerHTML = 'Sign Up';
+      signinpBtn.classList.add('disable');
+      signupBtn.classList.remove('disable');
+    }
+
     setIsSignUp(!isSignUp);
   };
 
   return (
     <div className="container_Login">
       <div className="form-box">
-        <h1 className="title">{isSignUp ? 'Sign Up' : 'Sign In'}</h1>
-        <form action="">
-          <div className={`input-group ${isSignUp ? '' : 'collapsed'}`}>
+        <h1 id="title">Sign Up</h1>
+        <form action="/tambah" method='POST'>
+          <div className="input-group">
             <div className="input-field" id="nameField">
               <i className="fa-solid fa-user"></i>
               <input type="text" name="name" id="name" placeholder="Name" />
@@ -26,12 +44,7 @@ function LoginRegister() {
 
             <div className="input-field">
               <i className="fa-solid fa-lock"></i>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-              />
+              <input type="password" name="password" id="password" placeholder="Password" />
             </div>
 
             <p>
@@ -42,10 +55,10 @@ function LoginRegister() {
             </p>
           </div>
           <div className="btn-field">
-            <button type="button" onClick={toggleForm} id="signupBtn">
+            <button type="button" id="signupBtn" onClick={toggleForm}>
               Sign up
             </button>
-            <button type="button" id="signinBtn" className="disable">
+            <button type="button" id="signinpBtn" className="disable" onClick={toggleForm}>
               Sign in
             </button>
           </div>
