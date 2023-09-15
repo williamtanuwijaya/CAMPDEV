@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState} from 'react';
 import './Login.css';
 // import '../../../../Backend/server';
 import axios from 'axios';
@@ -23,7 +23,7 @@ function LoginRegister() {
       .post('http://localhost:8081/sign-in', valueLogin)
       .then((res) => {
         if (res.data.status === 'Sign in success') {
-          window.location.replace('/');
+          window.location.replace('/dasboard');
           console.log(valueLogin);
           console.log(res.data.status);
         } else {
