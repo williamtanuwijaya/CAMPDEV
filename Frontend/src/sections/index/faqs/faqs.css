@@ -10,7 +10,13 @@
   }
   
   .faqs_container{
-    margin: 0px 400px;
+    margin: auto auto;
+    max-width: 50rem;
+    /* position: relative;
+    left: 50%;
+    margin-top: 10rem;
+    transform: translate(-50%, -50%);
+    max-width: 500px; */
   }
   
   .faq{
@@ -41,3 +47,9 @@
   /* .faq.open p{
     display: block;
   } */
+
+  @media screen and (max-width: 600px){
+    .faqs_container {
+    padding: 0 2rem;
+    }
+  }
