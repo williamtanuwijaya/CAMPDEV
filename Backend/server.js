@@ -49,7 +49,7 @@ class MyApp {
       const password = req.body.password;
       const checkEmail = `SELECT * FROM tbuser WHERE email = '${email}' and password_hash = '${password}'`;
       this.db.query(checkEmail, (req, result) => {
-        const resData = JSON.parse(JSON.stringify(result));
+        const resData = (JSON.stringify(result));
         console.log(resData);
         if (resData.length > 0) {
           return res.json({
