@@ -14,9 +14,7 @@ const Achievements = () => {
                 <div className="about_achievements-right">
                     <h1>Achievements</h1>
                     <p>
-
                     Halaman "Prestasi Kami" menampilkan berbagai prestasi dan pengakuan yang telah kami raih dalam penyelenggaraan kursus teknologi dan pemrograman.
-
                     </p>
                     <div className="achievements_cards">
                         {
@@ -24,7 +22,6 @@ const Achievements = () => {
                                 <article key={item.id} className="achievement_card">
                                     <span className="achievement_icon">
                                         <i><item.icon/></i>
-
                                     </span>
                                     <h3>{item.num}</h3>
                                     <p>{item.title}</p>

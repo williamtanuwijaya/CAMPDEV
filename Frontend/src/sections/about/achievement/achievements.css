@@ -32,21 +32,12 @@
   }
   
   .achievement_icon {
-<<<<<<< HEAD
-    background: var(--color-danger);
-    padding: 0.6rem;
-    border-radius: 1rem;
-    display: inline-block;
-    margin-bottom: 2rem;
-    font-size: 2rem;
-=======
     /* background: var(--color-danger); */
     padding: 0.6rem;
     border-radius: 1rem;
     display: inline-block;
     /* margin-bottom: 2rem; */
     font-size: 5rem;
->>>>>>> ReactCampDev
   }
   
   .achievements_card:nth-child(2) .achievement_icon {

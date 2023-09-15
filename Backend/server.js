@@ -140,4 +140,3 @@ class MyApp {
 
 const myApp = new MyApp();
 myApp.start();
-

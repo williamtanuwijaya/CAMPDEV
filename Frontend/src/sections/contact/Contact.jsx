@@ -3,26 +3,26 @@ import { useRef, useState } from 'react';
 import contactImage from './../../assets/images/contact.png';
 import emailjs from '@emailjs/browser';
 
+
 const Contact = () => {
-  const form = useRef();
-  const [messageSent, setMessageSent] = useState(false);
+    const form = useRef();
+    const [messageSent, setMessageSent] = useState(false);
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('service_lifrczz', 'template_np5x8lc', form.current, 'a6HEma8VdAKb2-QIN').then(
-      (result) => {
-        console.log(result.text);
-        console.log('sukses');
-        setMessageSent(true);
-        form.current.reset();
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-  };
-
+  
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_lifrczz', 'template_np5x8lc', form.current, 'a6HEma8VdAKb2-QIN')
+        .then((result) => {
+            console.log(result.text);
+            console.log('sukses');
+            setMessageSent(true);
+            form.current.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+  
   return (
     <section className="contact">
       <div className="container contact_container">
@@ -31,7 +31,9 @@ const Contact = () => {
             <img src={contactImage} alt="" />
           </div>
           <h2>Kontak Kami</h2>
-          <p>Halaman "Kontak Kami" menyediakan informasi dan sarana komunikasi untuk pengguna yang ingin berhubungan dengan kami.</p>
+          <p>
+          Halaman "Kontak Kami" menyediakan informasi dan sarana komunikasi untuk pengguna yang ingin berhubungan dengan kami.
+          </p>
           <ul className="contact_details">
             <li>
               <i className="uil uil-phone"></i>
@@ -67,10 +69,10 @@ const Contact = () => {
 
         <form ref={form} onSubmit={sendEmail} className="contact_form">
           <div className="form_name">
-            <input id="input" type="text" name="firstname" placeholder="First Name" required />
-            <input id="input" type="text" name="lastname" placeholder="Last Name" required />
+            <input id='input' type="text" name="firstname" placeholder="First Name" required />
+            <input id='input' type="text" name="lastname" placeholder="Last Name" required />
           </div>
-          <input id="input" type="email" name="emailadress" placeholder="Alamat Email" required />
+          <input id='input' type="email" name="emailadress" placeholder="Alamat Email" required />
           <textarea name="message" cols="30" rows="7" placeholder="Komentar dan Pesan" required></textarea>
           <button type="submit" className="btn btn-primary">
             Kirim Pesan
@@ -80,6 +82,6 @@ const Contact = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Contact;
