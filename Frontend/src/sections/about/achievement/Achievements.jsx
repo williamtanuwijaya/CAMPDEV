@@ -14,7 +14,7 @@ const Achievements = () => {
                 <div className="about_achievements-right">
                     <h1>Achievements</h1>
                     <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, aperiam? Unde quidem vitae ab magnam? Deserunt, blanditiis, qui enim aliquam in, impedit amet quisquam dignissimos dolorem ab iure error et?
+                    Halaman "Prestasi Kami" menampilkan berbagai prestasi dan pengakuan yang telah kami raih dalam penyelenggaraan kursus teknologi dan pemrograman.
                     </p>
                     <div className="achievements_cards">
                         {
