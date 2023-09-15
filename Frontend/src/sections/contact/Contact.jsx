@@ -32,8 +32,7 @@ const Contact = () => {
           </div>
           <h2>Kontak Kami</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde atque, ratione iure similique nulla soluta incidunt molestias dolores voluptate voluptates maiores neque necessitatibus reiciendis animi sed optio numquam. Quod,
-            dolores.
+          Halaman "Kontak Kami" menyediakan informasi dan sarana komunikasi untuk pengguna yang ingin berhubungan dengan kami.
           </p>
           <ul className="contact_details">
             <li>
