@@ -1,5 +1,5 @@
 import './categories.css';
-import data from './data';
+// import data from './data';
 import { SiCyberdefenders, SiFlutter, SiDatabricks } from 'react-icons/si';
 import { DiReact } from 'react-icons/di';
 import { CgWebsite } from 'react-icons/cg';
