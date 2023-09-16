@@ -20,7 +20,7 @@ function LoginRegister() {
   const handleSubmitLogin = (event) => {
     event.preventDefault();
     axios
-      .post('http://localhost:8081/sign-in', valueLogin)
+      .post('http://146.190.102.199:8081/sign-in', valueLogin)
       .then((res) => {
         if (res.data.status === 'Sign in success') {
           window.location.replace('/dasboard');
@@ -37,7 +37,7 @@ function LoginRegister() {
     event.preventDefault();
 
     axios
-      .post('http://localhost:8081/sign-up', valueRegis)
+      .post('http://146.190.102.199:8081/sign-up', valueRegis)
       .then((res) => {
         if (res.data.message === 'success') {
           setIsSignUp(false);
