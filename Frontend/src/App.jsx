@@ -5,7 +5,7 @@ import { Dasboard } from './navigation/LogoutNavigation';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/About" element={<About />} />
