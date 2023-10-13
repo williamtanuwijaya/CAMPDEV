@@ -1,6 +1,6 @@
 // import React from 'react'
 import data from './data';
-import './creatorPage.css';
+import './creatorpage.css';
 import { FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const CreatorPage = () => {
